@@ -1,20 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const labelText = 'Enter Your Name:';
-
-function getButtonText() {
-	return 'Click on me!';
+function getTime() {
+	return new Date().toLocaleTimeString();
 }
 
 const App = () => {
 	return (
 		<div>
-			<label className="label" for="name">
-				{labelText}
-			</label>
-			<input id="name" type="text" />
-			<button style={{ backgroundColor: 'blue', color: 'white' }}>{getButtonText()}</button>
+			<div>Current Time:</div>
+			<h3>{getTime()}</h3>
 		</div>
 	);
 };
